@@ -11,8 +11,13 @@ import '../services/stroke_evaluator.dart';
 
 class WritingPracticeScreen extends StatefulWidget {
   final KanaChar? initialChar;
+  final String sourceDataset; // 'hiragana', 'katakana', 'kanji'
 
-  const WritingPracticeScreen({super.key, this.initialChar});
+  const WritingPracticeScreen({
+    super.key,
+    this.initialChar,
+    this.sourceDataset = 'hiragana',
+  });
 
   @override
   State<WritingPracticeScreen> createState() => _WritingPracticeScreenState();
@@ -20,6 +25,7 @@ class WritingPracticeScreen extends StatefulWidget {
 
 class _WritingPracticeScreenState extends State<WritingPracticeScreen> {
   List<KanaChar> _characters = [];
+  late String _currentDataset;
   bool _isLoading = true;
   int _currentIndex = 0;
 
@@ -34,25 +40,70 @@ class _WritingPracticeScreenState extends State<WritingPracticeScreen> {
   @override
   void initState() {
     super.initState();
+    _currentDataset = widget.sourceDataset;
     _loadCharacters();
   }
 
   Future<void> _loadCharacters() async {
+    setState(() => _isLoading = true);
     try {
-      final jsonStr = await rootBundle.loadString('assets/data/japanese/hiragana.json');
+      String path = 'assets/data/japanese/hiragana.json';
+      if (_currentDataset == 'katakana') {
+        path = 'assets/data/japanese/katakana.json';
+      } else if (_currentDataset == 'kanji') {
+        path = 'assets/data/japanese/kanji.json';
+      }
+
+      final jsonStr = await rootBundle.loadString(path);
       final List list = jsonDecode(jsonStr);
-      final chars = list.map((e) => KanaChar.fromJson(e)).toList();
+
+      List<KanaChar> chars;
+      if (_currentDataset == 'kanji') {
+        chars = list.map((e) {
+          final k = e as Map<String, dynamic>;
+          final onyomi = (k['onyomi'] as List? ?? []).join(', ');
+          final meaning = k['meaning'] ?? '';
+          return KanaChar(
+            char: k['kanji'] ?? '',
+            romaji: onyomi.isNotEmpty ? onyomi : meaning,
+            thai: meaning,
+            category: 'kanji',
+            mouthGuide: MouthGuide(
+              shapeName: meaning,
+              instruction: k['strokeGuide'] ?? '',
+              thaiApproximation: k['mnemonics'] ?? '',
+              lipOpening: 'medium',
+              tonguePosition: 'medium',
+            ),
+          );
+        }).toList();
+      } else {
+        chars = list.map((e) => KanaChar.fromJson(e)).toList();
+      }
+
       setState(() {
         _characters = chars;
         if (widget.initialChar != null) {
           final found = chars.indexWhere((c) => c.char == widget.initialChar!.char);
           if (found != -1) _currentIndex = found;
+        } else {
+          _currentIndex = 0;
         }
         _isLoading = false;
       });
     } catch (e) {
       setState(() => _isLoading = false);
     }
+  }
+
+  void _switchDataset(String dataset) {
+    if (_currentDataset == dataset) return;
+    setState(() {
+      _currentDataset = dataset;
+      _currentIndex = 0;
+      _clearCanvas();
+    });
+    _loadCharacters();
   }
 
   void _clearCanvas() {
@@ -73,23 +124,23 @@ class _WritingPracticeScreenState extends State<WritingPracticeScreen> {
   }
 
   void _nextChar() {
-    if (_currentIndex < _characters.length - 1) {
-      setState(() {
-        _currentIndex++;
-        _clearCanvas();
-      });
-      _speakCurrent();
-    }
+    if (_characters.isEmpty) return;
+    setState(() {
+      // Endless loop! If at the end, roll over to 0
+      _currentIndex = (_currentIndex + 1) % _characters.length;
+      _clearCanvas();
+    });
+    _speakCurrent();
   }
 
   void _prevChar() {
-    if (_currentIndex > 0) {
-      setState(() {
-        _currentIndex--;
-        _clearCanvas();
-      });
-      _speakCurrent();
-    }
+    if (_characters.isEmpty) return;
+    setState(() {
+      // Endless loop backwards!
+      _currentIndex = (_currentIndex - 1 + _characters.length) % _characters.length;
+      _clearCanvas();
+    });
+    _speakCurrent();
   }
 
   void _evaluateWriting(double canvasSize) {
@@ -152,6 +203,43 @@ class _WritingPracticeScreenState extends State<WritingPracticeScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         child: Column(
           children: [
+            // Dataset Switcher Tabs (Hiragana / Katakana / Kanji)
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ChoiceChip(
+                    label: const Text('ฮิรางานะ (Hiragana)'),
+                    selected: _currentDataset == 'hiragana',
+                    selectedColor: Colors.orange.shade100,
+                    onSelected: (val) {
+                      if (val) _switchDataset('hiragana');
+                    },
+                  ),
+                  const SizedBox(width: 8),
+                  ChoiceChip(
+                    label: const Text('คาตากานะ (Katakana)'),
+                    selected: _currentDataset == 'katakana',
+                    selectedColor: Colors.orange.shade100,
+                    onSelected: (val) {
+                      if (val) _switchDataset('katakana');
+                    },
+                  ),
+                  const SizedBox(width: 8),
+                  ChoiceChip(
+                    label: const Text('คันจิ N5 (Kanji)'),
+                    selected: _currentDataset == 'kanji',
+                    selectedColor: Colors.orange.shade100,
+                    onSelected: (val) {
+                      if (val) _switchDataset('kanji');
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 12),
+
             // Header Info Bar
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),

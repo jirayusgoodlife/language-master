@@ -7,7 +7,9 @@ import '../widgets/mouth_shape_widget.dart';
 import 'writing_practice_screen.dart';
 
 class AlphabetLearningScreen extends StatefulWidget {
-  const AlphabetLearningScreen({super.key});
+  final String initialAlphabetType; // 'hiragana' or 'katakana'
+
+  const AlphabetLearningScreen({super.key, this.initialAlphabetType = 'hiragana'});
 
   @override
   State<AlphabetLearningScreen> createState() => _AlphabetLearningScreenState();
@@ -16,17 +18,23 @@ class AlphabetLearningScreen extends StatefulWidget {
 class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
   List<KanaChar> _characters = [];
   bool _isLoading = true;
+  late String _alphabetType;
   final String _selectedCategory = 'all';
 
   @override
   void initState() {
     super.initState();
+    _alphabetType = widget.initialAlphabetType;
     _loadData();
   }
 
   Future<void> _loadData() async {
+    setState(() => _isLoading = true);
     try {
-      final jsonStr = await rootBundle.loadString('assets/data/japanese/hiragana.json');
+      final path = _alphabetType == 'katakana'
+          ? 'assets/data/japanese/katakana.json'
+          : 'assets/data/japanese/hiragana.json';
+      final jsonStr = await rootBundle.loadString(path);
       final List list = jsonDecode(jsonStr);
       setState(() {
         _characters = list.map((e) => KanaChar.fromJson(e)).toList();
@@ -35,6 +43,12 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
     } catch (e) {
       setState(() => _isLoading = false);
     }
+  }
+
+  void _switchAlphabet(String type) {
+    if (_alphabetType == type) return;
+    setState(() => _alphabetType = type);
+    _loadData();
   }
 
   void _showMouthGuideDialog(KanaChar item) {
@@ -200,7 +214,10 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => WritingPracticeScreen(initialChar: item),
+                            builder: (_) => WritingPracticeScreen(
+                              initialChar: item,
+                              sourceDataset: _alphabetType,
+                            ),
                           ),
                         );
                       },
@@ -242,10 +259,15 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
         ? _characters
         : _characters.where((c) => c.category == _selectedCategory).toList();
 
+    final title = _alphabetType == 'katakana'
+        ? 'ตารางตัวอักษร คาตากานะ (Katakana)'
+        : 'ตารางตัวอักษร ฮิรางานะ (Hiragana)';
+    final primaryColor = _alphabetType == 'katakana' ? const Color(0xFFC2185B) : const Color(0xFFD32F2F);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ตารางตัวอักษร ฮิรางานะ (Hiragana)'),
-        backgroundColor: const Color(0xFFD32F2F),
+        title: Text(title),
+        backgroundColor: primaryColor,
         foregroundColor: Colors.white,
         actions: [
           IconButton(
@@ -254,7 +276,9 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => const WritingPracticeScreen()),
+                MaterialPageRoute(
+                  builder: (_) => WritingPracticeScreen(sourceDataset: _alphabetType),
+                ),
               );
             },
           ),
@@ -271,6 +295,33 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
       ),
       body: Column(
         children: [
+          // Alphabet Type Switcher (Hiragana vs Katakana)
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            color: Colors.grey.shade100,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ChoiceChip(
+                  label: const Text('ฮิรางานะ (Hiragana)'),
+                  selected: _alphabetType == 'hiragana',
+                  selectedColor: Colors.red.shade100,
+                  onSelected: (val) {
+                    if (val) _switchAlphabet('hiragana');
+                  },
+                ),
+                const SizedBox(width: 12),
+                ChoiceChip(
+                  label: const Text('คาตากานะ (Katakana)'),
+                  selected: _alphabetType == 'katakana',
+                  selectedColor: Colors.pink.shade100,
+                  onSelected: (val) {
+                    if (val) _switchAlphabet('katakana');
+                  },
+                ),
+              ],
+            ),
+          ),
           // Instructions banner
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),

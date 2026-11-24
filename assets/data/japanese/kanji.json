@@ -1,0 +1,174 @@
+[
+  {
+    "kanji": "日",
+    "strokeCount": 4,
+    "grade": "N5",
+    "meaning": "วัน, พระอาทิตย์, ญี่ปุ่น",
+    "onyomi": ["NICHI", "JITSU"],
+    "kunyomi": ["hi", "-bi", "-ka"],
+    "mnemonics": "จินตนาการถึงหน้าต่างที่มองเห็นดวงอาทิตย์ส่องแสง หรือรูปพระอาทิตย์มีเส้นแสงตรงกลาง",
+    "strokeGuide": "1. ลากดิ่งซ้าย, 2. ลากขวางแล้วหักลงขวา, 3. ขีดขวางตรงกลาง, 4. ขีดขวางปิดก้นกล่อง",
+    "vocabulary": [
+      {"word": "日本", "reading": "にほん (nihon)", "meaning": "ประเทศญี่ปุ่น"},
+      {"word": "日曜日", "reading": "にちようび (nichiyoubi)", "meaning": "วันอาทิตย์"},
+      {"word": "毎日", "reading": "まいにち (mainichi)", "meaning": "ทุกๆ วัน"}
+    ]
+  },
+  {
+    "kanji": "本",
+    "strokeCount": 5,
+    "grade": "N5",
+    "meaning": "หนังสือ, รากฐาน, ต้นกำเนิด",
+    "onyomi": ["HON"],
+    "kunyomi": ["moto"],
+    "mnemonics": "มาจากคันจิต้นไม้ (木) แล้วเพิ่มขีดขวางด้านล่างเพื่อชี้ถึง 'รากไม้' หรือรากฐาน",
+    "strokeGuide": "1. ขวาง, 2. ดิ่งกลาง, 3. เฉียงซ้าย, 4. เฉียงขวา, 5. ขีดขวางสั้นเน้นรากฐาน",
+    "vocabulary": [
+      {"word": "本", "reading": "ほん (hon)", "meaning": "หนังสือ"},
+      {"word": "日本語", "reading": "にほんご (nihongo)", "meaning": "ภาษาญี่ปุ่น"},
+      {"word": "山本", "reading": "やまもと (yamamoto)", "meaning": "ยามาโมโตะ (นามสกุลยอดนิยม)"}
+    ]
+  },
+  {
+    "kanji": "人",
+    "strokeCount": 2,
+    "grade": "N5",
+    "meaning": "คน, มนุษย์",
+    "onyomi": ["JIN", "NIN"],
+    "kunyomi": ["hito"],
+    "mnemonics": "คนสองคนพิงหลังช่วยค้ำจุนซึ่งกันและกัน ยืนแยกขาสองข้างอย่างมั่นคง",
+    "strokeGuide": "1. ตวัดโค้งลงซ้าย, 2. ลากจากกลางแตะแล้วเฉียงลงขวา",
+    "vocabulary": [
+      {"word": "日本人", "reading": "にほんじん (nihonjin)", "meaning": "คนญี่ปุ่น"},
+      {"word": "タイ人", "reading": "タイじん (taijin)", "meaning": "คนไทย"},
+      {"word": "一人", "reading": "ひとり (hitori)", "meaning": "คนเดียว / 1 คน"}
+    ]
+  },
+  {
+    "kanji": "一",
+    "strokeCount": 1,
+    "grade": "N5",
+    "meaning": "หนึ่ง (1)",
+    "onyomi": ["ICHI"],
+    "kunyomi": ["hito(tsu)"],
+    "mnemonics": "นิ้วชี้ 1 นิ้ววางในแนวนอน ลากเส้นขวางจากซ้ายไปขวาอย่างมั่นคง",
+    "strokeGuide": "1. ลากเส้นตรงขวางจากซ้ายไปขวาเพียง 1 เส้น",
+    "vocabulary": [
+      {"word": "一つ", "reading": "ひとつ (hitotsu)", "meaning": "หนึ่งชิ้น/หนึ่งอัน"},
+      {"word": "一日", "reading": "ついたち (tsuitachi)", "meaning": "วันที่ 1 ของเดือน"}
+    ]
+  },
+  {
+    "kanji": "二",
+    "strokeCount": 2,
+    "grade": "N5",
+    "meaning": "สอง (2)",
+    "onyomi": ["NI"],
+    "kunyomi": ["futa(tsu)"],
+    "mnemonics": "เส้นขนานสองเส้น ขีดบนสั้น ขีดล่างยาวกว่า",
+    "strokeGuide": "1. ขีดขวางบนสั้น, 2. ขีดขวางล่างยาวกว่า",
+    "vocabulary": [
+      {"word": "二つ", "reading": "ふたつ (futatsu)", "meaning": "สองชิ้น/สองอัน"},
+      {"word": "二月", "reading": "にがつ (nigatsu)", "meaning": "เดือนกุมภาพันธ์ (เดือน 2)"}
+    ]
+  },
+  {
+    "kanji": "三",
+    "strokeCount": 3,
+    "grade": "N5",
+    "meaning": "สาม (3)",
+    "onyomi": ["SAN"],
+    "kunyomi": ["mit(tsu)"],
+    "mnemonics": "สามเส้นขนานกัน: สวรรค์, มนุษย์, ผืนดิน",
+    "strokeGuide": "1. ขวางบนปานกลาง, 2. ขวางกลางสั้นสุด, 3. ขวางล่างยาวสุด",
+    "vocabulary": [
+      {"word": "三つ", "reading": "みっつ (mittsu)", "meaning": "สามชิ้น/สามอัน"},
+      {"word": "三年生", "reading": "さんねんせい (sannensei)", "meaning": "นักเรียนชั้นปี 3"}
+    ]
+  },
+  {
+    "kanji": "月",
+    "strokeCount": 4,
+    "grade": "N5",
+    "meaning": "ดวงจันทร์, เดือน",
+    "onyomi": ["GETSU", "GATSU"],
+    "kunyomi": ["tsuki"],
+    "mnemonics": "รูปพระจันทร์เสี้ยวมีก้อนเมฆพาดผ่านสองเส้นตรงกลาง",
+    "strokeGuide": "1. ลากดิ่งโค้งซ้าย, 2. ลากขวางแล้วหักดิ่งลงมีตวัดปลาย, 3. ขวางกลาง, 4. ขวางล่าง",
+    "vocabulary": [
+      {"word": "今月", "reading": "こんげつ (kongetsu)", "meaning": "เดือนนี้"},
+      {"word": "月曜日", "reading": "げつようび (getsuyoubi)", "meaning": "วันจันทร์"},
+      {"word": "月", "reading": "つき (tsuki)", "meaning": "ดวงจันทร์"}
+    ]
+  },
+  {
+    "kanji": "火",
+    "strokeCount": 4,
+    "grade": "N5",
+    "meaning": "ไฟ, เปลวเพลิง",
+    "onyomi": ["KA"],
+    "kunyomi": ["hi"],
+    "mnemonics": "เปลวไฟกำลังลุกโชติช่วง มีสะเก็ดไฟกระเด็นออกด้านซ้ายและขวา",
+    "strokeGuide": "1. แต้มซ้าย, 2. แต้มขวา, 3. ลากดิ่งโค้งซ้าย, 4. ตวัดเฉียงลงขวา",
+    "vocabulary": [
+      {"word": "火曜日", "reading": "かようび (kayoubi)", "meaning": "วันอังคาร"},
+      {"word": "花火", "reading": "はなび (hanabi)", "meaning": "ดอกไม้ไฟ/พลุ"}
+    ]
+  },
+  {
+    "kanji": "水",
+    "strokeCount": 4,
+    "grade": "N5",
+    "meaning": "น้ำ",
+    "onyomi": ["SUI"],
+    "kunyomi": ["mizu"],
+    "mnemonics": "สายน้ำไหลเชี่ยวตรงกลาง มีละอองน้ำกระเซ็นออกสองข้าง",
+    "strokeGuide": "1. ลากดิ่งกลางตวัดขึ้น, 2. หักเฉียงซ้าย, 3. เฉียงขวาบน, 4. เฉียงขวาล่าง",
+    "vocabulary": [
+      {"word": "水", "reading": "みず (mizu)", "meaning": "น้ำดื่ม"},
+      {"word": "水曜日", "reading": "すいようび (suiyoubi)", "meaning": "วันพุธ"}
+    ]
+  },
+  {
+    "kanji": "木",
+    "strokeCount": 4,
+    "grade": "N5",
+    "meaning": "ต้นไม้, ไม้",
+    "onyomi": ["MOKU", "BOKU"],
+    "kunyomi": ["ki"],
+    "mnemonics": "ลำต้นไม้ตรง มีกิ่งไม้แผ่ออก และรากไม้หยั่งลึกลงดิน",
+    "strokeGuide": "1. ขวาง, 2. ดิ่งกลาง, 3. เฉียงซ้าย, 4. เฉียงขวา",
+    "vocabulary": [
+      {"word": "木曜日", "reading": "もくようび (mokuyoubi)", "meaning": "วันพฤหัสบดี"},
+      {"word": "木", "reading": "き (ki)", "meaning": "ต้นไม้"}
+    ]
+  },
+  {
+    "kanji": "金",
+    "strokeCount": 8,
+    "grade": "N5",
+    "meaning": "ทองคำ, เงินตรา",
+    "onyomi": ["KIN", "KON"],
+    "kunyomi": ["kane"],
+    "mnemonics": "หลังคาเหมืองทอง มีก้อนทองคำฝังอยู่ใต้ดินส่องประกาย",
+    "strokeGuide": "1. เฉียงซ้าย, 2. เฉียงขวา (หลังคา), 3. ขวาง, 4. ดิ่ง, 5. แต้มซ้าย, 6. แต้มขวา, 7. ขวางกลาง, 8. ขวางปิดฐาน",
+    "vocabulary": [
+      {"word": "お金", "reading": "おかね (okane)", "meaning": "เงินตรา"},
+      {"word": "金曜日", "reading": "きんようび (kinyoubi)", "meaning": "วันศุกร์"}
+    ]
+  },
+  {
+    "kanji": "土",
+    "strokeCount": 3,
+    "grade": "N5",
+    "meaning": "ดิน, ผืนดิน",
+    "onyomi": ["DO", "TO"],
+    "kunyomi": ["tsuchi"],
+    "mnemonics": "ต้นกล้าเล็กๆ กำลังงอกโผล่พ้นผืนดินแผ่นใหญ่",
+    "strokeGuide": "1. ขวางบนสั้น, 2. ดิ่งกลาง, 3. ขวางล่างยาวเป็นฐาน",
+    "vocabulary": [
+      {"word": "土曜日", "reading": "どようび (doyoubi)", "meaning": "วันเสาร์"},
+      {"word": "お土産", "reading": "おみやげ (omiyage)", "meaning": "ของฝาก"}
+    ]
+  }
+]

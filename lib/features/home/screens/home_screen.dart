@@ -3,6 +3,8 @@ import '../../../core/services/update_service.dart';
 import '../../../core/widgets/update_dialog.dart';
 import '../../alphabet/screens/alphabet_learning_screen.dart';
 import '../../alphabet/screens/writing_practice_screen.dart';
+import '../../alphabet/screens/kanji_learning_screen.dart';
+import '../../alphabet/screens/flashcards_screen.dart';
 import '../../shadowing/screens/shadowing_screen.dart';
 import '../../quiz/screens/quiz_screen.dart';
 import '../../ai_tutor/screens/ai_tutor_screen.dart';
@@ -189,12 +191,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 12),
 
-            // Step 1: Alphabet & Phonics
+            // Step 1: Alphabet & Phonics (Hiragana & Katakana)
             _buildLearningCard(
               context: context,
-              step: 'ขั้นตอนที่ 1',
-              title: 'จำตัวอักษร & แนะนำรูปปาก (Alphabet & Phonics)',
-              description: 'สำหรับผู้เริ่มต้นจาก 0: แตะฟังเสียงตัวอักษร ดูภาพรูปปากและเทคนิคขยับลิ้นเทียบเสียงไทย',
+              step: 'ตัวอักษร',
+              title: 'ฮิรางานะ & คาตากานะ (Hiragana & Katakana)',
+              description: 'สำหรับผู้เริ่มต้นจาก 0: ตาราง 46 ตัวอักษร แตะฟังเสียง แนะนำรูปปากเทียบเสียงไทย และสลับตารางคาตากานะได้',
               icon: Icons.translate,
               color: const Color(0xFFD32F2F),
               onTap: () {
@@ -207,18 +209,54 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 12),
 
-            // Step 1.5: Stroke Writing Practice
+            // Step 1.2: Kanji Master
             _buildLearningCard(
               context: context,
-              step: 'ฝึกเขียนตัวอักษร',
-              title: 'ฝึกคัดลายมือตามลำดับเส้น (Stroke Order Canvas)',
-              description: 'กระดานตารางคัดลายมือแบบญี่ปุ่น: ลากเส้นเขียนตามรอยประ นับจำนวนเส้น ลบหรือย้อนกลับได้ และซ่อนเส้นนำเพื่อทดสอบความจำ',
+              step: 'คันจิ N5',
+              title: 'คันจิพื้นฐาน & เทคนิคการจำ (Kanji Master)',
+              description: 'เรียนรู้คันจิต้นกำเนิด: เสียงอง (Onyomi), เสียงคุน (Kunyomi), เทคนิคจำภาพ และตัวอย่างคำศัพท์ที่ใช้จริง',
+              icon: Icons.auto_stories,
+              color: const Color(0xFF1A237E),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const KanjiLearningScreen()),
+                );
+              },
+            ),
+
+            const SizedBox(height: 12),
+
+            // Step 1.5: Stroke Writing Practice (Endless writing for Hiragana, Katakana & Kanji)
+            _buildLearningCard(
+              context: context,
+              step: 'ฝึกเขียน',
+              title: 'ฝึกคัดลายมือวนซ้ำ (Stroke Order Practice)',
+              description: 'ลากเส้นตามลำดับ เขียนวนไปเรื่อยๆ ได้ไม่จำกัด มีระบบตรวจความถูกต้องของลายมือ (%) รองรับทั้ง ฮิรางานะ, คาตากานะ และคันจิ',
               icon: Icons.draw_outlined,
               color: const Color(0xFFE65100),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const WritingPracticeScreen()),
+                );
+              },
+            ),
+
+            const SizedBox(height: 12),
+
+            // Step 1.8: Flashcards
+            _buildLearningCard(
+              context: context,
+              step: 'คลังคำศัพท์',
+              title: 'การ์ดจำคำศัพท์ (SRS Flashcards)',
+              description: 'ระบบการ์ดคำศัพท์พลิกดูความหมาย ตัวอย่างประโยค และบันทึกคำที่จำได้แล้วเพื่อทบทวนวนซ้ำ',
+              icon: Icons.style,
+              color: const Color(0xFF00897B),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const FlashcardsScreen()),
                 );
               },
             ),

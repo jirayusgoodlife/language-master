@@ -1,0 +1,110 @@
+[
+  {
+    "id": "v01",
+    "word": "おはようございます",
+    "kanji": "お早うございます",
+    "romaji": "ohayou gozaimasu",
+    "thai": "สวัสดีตอนเช้า (สุภาพ)",
+    "category": "greetings",
+    "example": "先生、おはようございます。(อาจารย์ครับ สวัสดีตอนเช้าครับ)"
+  },
+  {
+    "id": "v02",
+    "word": "こんにちは",
+    "kanji": "今日は",
+    "romaji": "konnichiwa",
+    "thai": "สวัสดีตอนกลางวัน",
+    "category": "greetings",
+    "example": "みなさん、こんにちは。(สวัสดีทุกคนครับ)"
+  },
+  {
+    "id": "v03",
+    "word": "こんばんは",
+    "kanji": "今晩は",
+    "romaji": "konbanwa",
+    "thai": "สวัสดีตอนเย็น / ค่ำ",
+    "category": "greetings",
+    "example": "こんばんは、いい夜ですね。(สวัสดีตอนเย็น คืนนี้อากาศดีจังเลยนะครับ)"
+  },
+  {
+    "id": "v04",
+    "word": "ありがとう",
+    "kanji": "有難う",
+    "romaji": "arigatou",
+    "thai": "ขอบคุณ (สุภาพ: ありがとうございます)",
+    "category": "manners",
+    "example": "手伝ってくれてありがとう。(ขอบคุณที่ช่วยนะ)"
+  },
+  {
+    "id": "v05",
+    "word": "すみません",
+    "kanji": null,
+    "romaji": "sumimasen",
+    "thai": "ขอโทษ / ขออนุญาต / ขอบคุณ",
+    "category": "manners",
+    "example": "すみません、お会計をお願いします。(ขอโทษนะคะ ขอเช็กบิลด้วยค่ะ)"
+  },
+  {
+    "id": "v06",
+    "word": "ごめんなさい",
+    "kanji": null,
+    "romaji": "gomennasai",
+    "thai": "ขอโทษด้วยความจริงใจ (ใช้กับคนสนิท)",
+    "category": "manners",
+    "example": "遅れてごめんなさい。(ขอโทษที่มาช้านะ)"
+  },
+  {
+    "id": "v07",
+    "word": "はい",
+    "kanji": null,
+    "romaji": "hai",
+    "thai": "ใช่ / ครับ / ค่ะ",
+    "category": "basics",
+    "example": "はい、わかりました。(ครับ เข้าใจแล้วครับ)"
+  },
+  {
+    "id": "v08",
+    "word": "いいえ",
+    "kanji": null,
+    "romaji": "iie",
+    "thai": "ไม่ใช่ / ไม่เป็นไร",
+    "category": "basics",
+    "example": "いいえ、違います。(ไม่ใช่ ไม่ถูกต้องครับ)"
+  },
+  {
+    "id": "v09",
+    "word": "いただきます",
+    "kanji": null,
+    "romaji": "itadakimasu",
+    "thai": "จะทานแล้วนะครับ/ค่ะ (พูดก่อนทานอาหาร)",
+    "category": "daily_life",
+    "example": "手を合わせて、いただきます！(พนมมือแล้วพูด จะทานแล้วนะครับ!)"
+  },
+  {
+    "id": "v10",
+    "word": "ごちそうさまでした",
+    "kanji": "ご馳走様でした",
+    "romaji": "gochisousama deshita",
+    "thai": "ขอบคุณสำหรับอาหาร (พูดหลังทานเสร็จ)",
+    "category": "daily_life",
+    "example": "とても美味しかったです、ごちそうさまでした。(อร่อยมากเลยครับ ขอบคุณสำหรับอาหาร)"
+  },
+  {
+    "id": "v11",
+    "word": "いってきます",
+    "kanji": "行ってきます",
+    "romaji": "ittekimasu",
+    "thai": "ไปแล้วนะครับ/ค่ะ (พูดตอนออกจากบ้าน)",
+    "category": "daily_life",
+    "example": "学校へ行ってきます！(ไปโรงเรียนแล้วนะครับ!)"
+  },
+  {
+    "id": "v12",
+    "word": "ただいま",
+    "kanji": null,
+    "romaji": "tadaima",
+    "thai": "กลับมาแล้วครับ/ค่ะ (พูดตอนกลับถึงบ้าน)",
+    "category": "daily_life",
+    "example": "ただいま！お腹が空いたよ。(กลับมาแล้วครับ! หิวข้าวแล้ว)"
+  }
+]
