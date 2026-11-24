@@ -129,11 +129,15 @@ else
 fi
 
 # Confirmation
-read -rp "Proceed with build & release? [Y/n] " CONFIRM
-CONFIRM=${CONFIRM:-Y}
-if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
-    echo -e "${YELLOW}Release aborted.${NC}"
-    exit 0
+if [ -t 0 ]; then
+    read -rp "Proceed with build & release? [Y/n] " CONFIRM
+    CONFIRM=${CONFIRM:-Y}
+    if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
+        echo -e "${YELLOW}Release aborted.${NC}"
+        exit 0
+    fi
+else
+    echo -e "${YELLOW}Non-interactive terminal detected, proceeding automatically with release...${NC}"
 fi
 
 # 1. Update pubspec.yaml
