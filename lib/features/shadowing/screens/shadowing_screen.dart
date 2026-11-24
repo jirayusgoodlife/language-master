@@ -192,9 +192,12 @@ class _ShadowingScreenState extends State<ShadowingScreen> {
                         ),
                       ),
                       const SizedBox(width: 8),
-                      Text(
-                        'สถานการณ์: ${lesson.scenario}',
-                        style: const TextStyle(color: Colors.white70, fontSize: 12),
+                      Expanded(
+                        child: Text(
+                          'สถานการณ์: ${lesson.scenario}',
+                          style: const TextStyle(color: Colors.white70, fontSize: 12),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                     ],
                   ),
@@ -254,9 +257,12 @@ class _ShadowingScreenState extends State<ShadowingScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          'ฝึกพูดตามทีละท่อน (${_activeLineIndex + 1}/${lesson.shadowingLines.length})',
-                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey.shade700),
+                        Expanded(
+                          child: Text(
+                            'ฝึกพูดตามทีละท่อน (${_activeLineIndex + 1}/${lesson.shadowingLines.length})',
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey.shade700),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
                         IconButton.filledTonal(
                           onPressed: () => TtsService().speakJapanese(activeLine.japanese),
@@ -365,19 +371,29 @@ class _ShadowingScreenState extends State<ShadowingScreen> {
 
                     const SizedBox(height: 20),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ElevatedButton(
-                          onPressed: _activeLineIndex > 0
-                              ? () => setState(() => _activeLineIndex--)
-                              : null,
-                          child: const Text('◀ ประโยคก่อนหน้า'),
+                        Expanded(
+                          child: ElevatedButton(
+                            onPressed: _activeLineIndex > 0
+                                ? () => setState(() => _activeLineIndex--)
+                                : null,
+                            child: const FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text('◀ ประโยคก่อนหน้า'),
+                            ),
+                          ),
                         ),
-                        ElevatedButton(
-                          onPressed: _activeLineIndex < lesson.shadowingLines.length - 1
-                              ? () => setState(() => _activeLineIndex++)
-                              : null,
-                          child: const Text('ประโยคถัดไป ▶'),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: ElevatedButton(
+                            onPressed: _activeLineIndex < lesson.shadowingLines.length - 1
+                                ? () => setState(() => _activeLineIndex++)
+                                : null,
+                            child: const FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text('ประโยคถัดไป ▶'),
+                            ),
+                          ),
                         ),
                       ],
                     )

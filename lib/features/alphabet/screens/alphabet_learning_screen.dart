@@ -70,20 +70,23 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
                     style: const TextStyle(fontSize: 56, fontWeight: FontWeight.bold, color: Color(0xFFD32F2F)),
                   ),
                   const SizedBox(width: 16),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Romaji: ${item.romaji}',
-                        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
-                      ),
-                      Text(
-                        'เสียงไทย: ${item.thai}',
-                        style: TextStyle(fontSize: 18, color: Colors.grey.shade700),
-                      ),
-                    ],
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Romaji: ${item.romaji}',
+                          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        Text(
+                          'เสียงไทย: ${item.thai}',
+                          style: TextStyle(fontSize: 18, color: Colors.grey.shade700),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
+                    ),
                   ),
-                  const Spacer(),
                   IconButton.filledTonal(
                     iconSize: 32,
                     onPressed: () => TtsService().speakJapanese(item.char),
@@ -325,19 +328,25 @@ class _AlphabetLearningScreenState extends State<AlphabetLearningScreen> {
                           ),
                         ),
                         const SizedBox(height: 4),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              item.romaji,
-                              style: const TextStyle(fontWeight: FontWeight.bold, color: Color(0xFFD32F2F)),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  item.romaji,
+                                  style: const TextStyle(fontWeight: FontWeight.bold, color: Color(0xFFD32F2F)),
+                                ),
+                                const SizedBox(width: 4),
+                                Text(
+                                  '(${item.thai})',
+                                  style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                                ),
+                              ],
                             ),
-                            const SizedBox(width: 4),
-                            Text(
-                              '(${item.thai})',
-                              style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
-                            ),
-                          ],
+                          ),
                         ),
                         const SizedBox(height: 4),
                         const Row(

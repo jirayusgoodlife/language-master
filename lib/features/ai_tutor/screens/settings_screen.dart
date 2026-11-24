@@ -249,9 +249,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     children: [
                       const Icon(Icons.system_update_rounded, color: Color(0xFFD32F2F)),
                       const SizedBox(width: 8),
-                      const Text(
-                        'การอัปเดตแอปพลิเคชัน (GitHub Auto Update)',
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                      const Expanded(
+                        child: Text(
+                          'การอัปเดตแอปพลิเคชัน (GitHub Auto Update)',
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                     ],
                   ),

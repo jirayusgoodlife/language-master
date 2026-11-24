@@ -44,6 +44,8 @@ class UpdateDialog extends StatelessWidget {
           titlePadding: const EdgeInsets.fromLTRB(24, 24, 24, 12),
           contentPadding: const EdgeInsets.symmetric(horizontal: 24),
           actionsPadding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+          actionsOverflowDirection: VerticalDirection.down,
+          actionsOverflowButtonSpacing: 8,
           title: Row(
             children: [
               Container(
@@ -198,32 +200,43 @@ class UpdateDialog extends StatelessWidget {
                 onPressed: () => Navigator.pop(context),
                 child: const Text('ไว้คราวหน้า', style: TextStyle(color: Colors.grey)),
               ),
-              OutlinedButton.icon(
-                icon: const Icon(Icons.downloading, size: 18),
-                label: const Text('ดาวน์โหลดพื้นหลัง'),
-                onPressed: () {
-                  updateService.startDownload(runInBackground: true);
-                  Navigator.pop(context);
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text('กำลังดาวน์โหลด ${info.tagName} ในพื้นหลัง...'),
-                      backgroundColor: const Color(0xFFD32F2F),
+                Expanded(
+                  child: OutlinedButton.icon(
+                    icon: const Icon(Icons.downloading, size: 16),
+                    label: const FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text('ดาวน์โหลดพื้นหลัง'),
                     ),
-                  );
-                },
-              ),
-              ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFD32F2F),
-                  foregroundColor: Colors.white,
-                  elevation: 0,
+                    onPressed: () {
+                      updateService.startDownload(runInBackground: true);
+                      Navigator.pop(context);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('กำลังดาวน์โหลด ${info.tagName} ในพื้นหลัง...'),
+                          backgroundColor: const Color(0xFFD32F2F),
+                        ),
+                      );
+                    },
+                  ),
                 ),
-                icon: const Icon(Icons.arrow_downward_rounded, size: 18),
-                label: const Text('ดาวน์โหลดทันที'),
-                onPressed: () {
-                  updateService.startDownload(runInBackground: false);
-                },
-              ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFD32F2F),
+                      foregroundColor: Colors.white,
+                      elevation: 0,
+                    ),
+                    icon: const Icon(Icons.arrow_downward_rounded, size: 16),
+                    label: const FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text('ดาวน์โหลดทันที'),
+                    ),
+                    onPressed: () {
+                      updateService.startDownload(runInBackground: false);
+                    },
+                  ),
+                ),
             ],
             if (isDownloading) ...[
               TextButton(

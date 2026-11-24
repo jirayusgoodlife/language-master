@@ -85,18 +85,23 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           // Language Switcher Dropdown
           Container(
-            margin: const EdgeInsets.only(right: 16),
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(right: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
             decoration: BoxDecoration(
               color: Colors.white.withValues(alpha: 0.2),
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(16),
             ),
             child: DropdownButtonHideUnderline(
               child: DropdownButton<String>(
                 value: _selectedLanguage,
                 dropdownColor: const Color(0xFFD32F2F),
-                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                icon: const Icon(Icons.arrow_drop_down, color: Colors.white),
+                isDense: true,
+                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
+                icon: const Icon(Icons.arrow_drop_down, color: Colors.white, size: 20),
+                selectedItemBuilder: (context) => const [
+                  Center(child: Text('🇯🇵 JP', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))),
+                  Center(child: Text('🇬🇧 EN', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))),
+                ],
                 items: const [
                   DropdownMenuItem(value: 'Japanese', child: Text('🇯🇵 ภาษาญี่ปุ่น')),
                   DropdownMenuItem(value: 'English', child: Text('🇬🇧 ภาษาอังกฤษ')),

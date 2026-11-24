@@ -471,25 +471,37 @@ class _WritingPracticeScreenState extends State<WritingPracticeScreen> {
 
             // Navigation Controls (Previous / Next Character)
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ElevatedButton.icon(
-                  onPressed: _currentIndex > 0 ? _prevChar : null,
-                  icon: const Icon(Icons.chevron_left),
-                  label: const Text('ตัวก่อนหน้า'),
-                ),
-                Text(
-                  '${_currentIndex + 1} / ${_characters.length}',
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                ),
-                ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFE65100),
-                    foregroundColor: Colors.white,
+                Expanded(
+                  child: ElevatedButton.icon(
+                    onPressed: _currentIndex > 0 ? _prevChar : null,
+                    icon: const Icon(Icons.chevron_left, size: 18),
+                    label: const FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text('ตัวก่อนหน้า'),
+                    ),
                   ),
-                  onPressed: _currentIndex < _characters.length - 1 ? _nextChar : null,
-                  icon: const Icon(Icons.chevron_right),
-                  label: const Text('ตัวถัดไป'),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Text(
+                    '${_currentIndex + 1} / ${_characters.length}',
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                ),
+                Expanded(
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFE65100),
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: _currentIndex < _characters.length - 1 ? _nextChar : null,
+                    icon: const Icon(Icons.chevron_right, size: 18),
+                    label: const FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text('ตัวถัดไป'),
+                    ),
+                  ),
                 ),
               ],
             ),
