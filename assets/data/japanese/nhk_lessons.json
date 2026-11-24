@@ -1,0 +1,179 @@
+[
+  {
+    "id": "nhk_01",
+    "lessonNumber": 1,
+    "title": "はじめまして (ยินดีที่ได้รู้จัก)",
+    "scenario": "การทักทายเมื่อเจอกันครั้งแรก และการแนะนำตัวเองสั้นๆ",
+    "difficulty": "N5 / Beginner",
+    "culturalTip": "เวลาแนะนำตัวในญี่ปุ่น นิยมโค้งคำนับ (Eshaku) ประมาณ 15 องศาเพื่อความสุภาพ",
+    "keyPhrase": {
+      "japanese": "はじめまして。アンナです。",
+      "furigana": "はじめまして。アンナです。",
+      "romaji": "Hajimemashite. Anna desu.",
+      "thai": "ยินดีที่ได้รู้จักครับ/ค่ะ ฉันชื่อแอนนา",
+      "breakdown": [
+        {"word": "はじめまして", "reading": "hajimemashite", "meaning": "ยินดีที่ได้รู้จัก (ใช้ตอนเจอกันครั้งแรก)"},
+        {"word": "アンナ", "reading": "anna", "meaning": "แอนนา (ชื่อบุคคล)"},
+        {"word": "です", "reading": "desu", "meaning": "เป็น/คือ (คำลงท้ายสุภาพ)"}
+      ]
+    },
+    "dialogue": [
+      {
+        "speaker": "Anna",
+        "japanese": "はじめまして。アンナです。",
+        "romaji": "Hajimemashite. Anna desu.",
+        "thai": "ยินดีที่ได้รู้จักค่ะ ฉันชื่อแอนนาค่ะ"
+      },
+      {
+        "speaker": "Ken",
+        "japanese": "はじめまして。けんです。よろしくおねがいします。",
+        "romaji": "Hajimemashite. Ken desu. Yoroshiku onegaishimasu.",
+        "thai": "ยินดีที่ได้รู้จักครับ ผมชื่อเคนครับ ฝากเนื้อฝากตัวด้วยนะครับ"
+      }
+    ],
+    "shadowingLines": [
+      {
+        "id": "line_1",
+        "japanese": "はじめまして。",
+        "romaji": "Hajimemashite.",
+        "thai": "ยินดีที่ได้รู้จัก",
+        "pauseDurationMs": 2500,
+        "tips": "แบ่งจังหวะ: ฮา-จิ-เมะ-มา-ชิ-เตะ พูดให้เรียบเนียน"
+      },
+      {
+        "id": "line_2",
+        "japanese": "アンナです。",
+        "romaji": "Anna desu.",
+        "thai": "ฉันชื่อแอนนาค่ะ",
+        "pauseDurationMs": 2000,
+        "tips": "คำว่า desu ออกเสียงเป็น เดสึ เบาๆ เสียง 'อุ' แทบไม่ออก"
+      },
+      {
+        "id": "line_3",
+        "japanese": "よろしくおねがいします。",
+        "romaji": "Yoroshiku onegaishimasu.",
+        "thai": "ขอฝากเนื้อฝากตัวด้วยครับ/ค่ะ",
+        "pauseDurationMs": 3500,
+        "tips": "ประโยคทองคำที่คนญี่ปุ่นใช้บ่อยที่สุด จำทั้งก้อนได้เลย!"
+      }
+    ]
+  },
+  {
+    "id": "nhk_02",
+    "lessonNumber": 2,
+    "title": "これは何ですか (นี่คืออะไรครับ)",
+    "scenario": "การถามชื่อสิ่งของในชีวิตประจำวัน และการชี้ของใกล้ตัว",
+    "difficulty": "N5 / Beginner",
+    "culturalTip": "これ (kore = สิ่งนี้ใกล้ตัวเรา), それ (sore = สิ่งนั้นใกล้คนฟัง), あれ (are = สิ่งโน้นไกลทั้งคู่)",
+    "keyPhrase": {
+      "japanese": "これは なんですか。",
+      "furigana": "これは 何ですか。",
+      "romaji": "Kore wa nan desu ka.",
+      "thai": "สิ่งนี้คืออะไรครับ/ค่ะ?",
+      "breakdown": [
+        {"word": "これ", "reading": "kore", "meaning": "สิ่งนี้ (ของอยู่ใกล้ตัวผู้พูด)"},
+        {"word": "は", "reading": "wa", "meaning": "คำช่วยชี้หัวข้อเรื่อง (เขียน は แต่ออกเสียง wa)"},
+        {"word": "なん", "reading": "nan", "meaning": "อะไร"},
+        {"word": "ですか", "reading": "desu ka", "meaning": "คือ...ใช่ไหม/หรือครับ (ka เป็นเครื่องหมายคำถาม)"}
+      ]
+    },
+    "dialogue": [
+      {
+        "speaker": "Anna",
+        "japanese": "これは なんですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "thai": "นี่คืออะไรคะ?"
+      },
+      {
+        "speaker": "Staff",
+        "japanese": "それは おちゃです。",
+        "romaji": "Sore wa ocha desu.",
+        "thai": "นั่นคือน้ำชาครับ"
+      }
+    ],
+    "shadowingLines": [
+      {
+        "id": "line_1",
+        "japanese": "これは なんですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "thai": "สิ่งนี้คืออะไรครับ?",
+        "pauseDurationMs": 2500,
+        "tips": "ขึ้นเสียงสูงเล็กน้อยตรงท้ายคำ 'คะ? (ka)' เพื่อแสดงคำถาม"
+      },
+      {
+        "id": "line_2",
+        "japanese": "それは おちゃです。",
+        "romaji": "Sore wa ocha desu.",
+        "thai": "สิ่งนั้นคือน้ำชาครับ",
+        "pauseDurationMs": 2500,
+        "tips": "おちゃ ใส่ お ข้างหน้าเพื่อความสุภาพเรียบร้อย"
+      }
+    ]
+  },
+  {
+    "id": "nhk_03",
+    "lessonNumber": 3,
+    "title": "いくらですか (ราคาเท่าไรครับ)",
+    "scenario": "การซื้อของในร้านสะดวกซื้อหรือตลาด การถามราคา",
+    "difficulty": "N5 / Beginner",
+    "culturalTip": "ในร้านค้าญี่ปุ่น เมื่อจ่ายเงินจะวางเงินลงในถาดเงิน (torei) ไม่ยื่นใส่มือโดยตรง",
+    "keyPhrase": {
+      "japanese": "これは いくらですか。",
+      "furigana": "これは いくらですか。",
+      "romaji": "Kore wa ikura desu ka.",
+      "thai": "อันนี้ราคาเท่าไรครับ/ค่ะ?",
+      "breakdown": [
+        {"word": "これ", "reading": "kore", "meaning": "สิ่งนี้"},
+        {"word": "は", "reading": "wa", "meaning": "คำช่วยชี้ประธาน"},
+        {"word": "いくら", "reading": "ikura", "meaning": "ราคาเท่าไร"},
+        {"word": "ですか", "reading": "desu ka", "meaning": "ครับ/ค่ะ"}
+      ]
+    },
+    "dialogue": [
+      {
+        "speaker": "Anna",
+        "japanese": "すみません、これは いくらですか。",
+        "romaji": "Sumimasen, kore wa ikura desu ka.",
+        "thai": "ขอโทษนะคะ อันนี้ราคาเท่าไรคะ?"
+      },
+      {
+        "speaker": "Staff",
+        "japanese": "ひゃくえんです。",
+        "romaji": "Hyaku-en desu.",
+        "thai": "100 เยนครับ"
+      },
+      {
+        "speaker": "Anna",
+        "japanese": "じゃあ、これを ください。",
+        "romaji": "Jaa, kore o kudasai.",
+        "thai": "งั้นขออันนี้ค่ะ"
+      }
+    ],
+    "shadowingLines": [
+      {
+        "id": "line_1",
+        "japanese": "すみません。",
+        "romaji": "Sumimasen.",
+        "thai": "ขอโทษครับ/ขออนุญาตครับ",
+        "pauseDurationMs": 2000,
+        "tips": "คำนี้ใช้ได้ทั้ง ขอโทษ, ขอบคุณ, และเรียกพนักงานร้าน!"
+      },
+      {
+        "id": "line_2",
+        "japanese": "これは いくらですか。",
+        "romaji": "Kore wa ikura desu ka.",
+        "thai": "อันนี้ราคาเท่าไรครับ?",
+        "pauseDurationMs": 2500,
+        "tips": "เน้นเสียง อิ-คุ-ระ ให้ชัดเจน"
+      },
+      {
+        "id": "line_3",
+        "japanese": "これを ください。",
+        "romaji": "Kore o kudasai.",
+        "thai": "ขออันนี้ครับ (เวลาสั่งซื้อของ)",
+        "pauseDurationMs": 2500,
+        "tips": "เปลี่ยนคำว่า Kore เป็นชื่อของที่ต้องการสั่งได้เลย เช่น Kohii o kudasai (ขอกาแฟแก้วหนึ่งครับ)"
+      }
+    ]
+  }
+]

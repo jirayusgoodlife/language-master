@@ -1,0 +1,876 @@
+[
+  {
+    "char": "あ",
+    "romaji": "a",
+    "thai": "อะ/อา",
+    "category": "vowel",
+    "mouthGuide": {
+      "shapeName": "เปิดปากปานกลาง สบายๆ",
+      "instruction": "เปิดริมฝีปากบนล่างพอประมาณ ไม่กว้างเท่าสระ 'อา' ในภาษาไทย ผ่อนคลายกล้ามเนื้อรอบปาก ลิ้นวางราบก้นปาก",
+      "thaiApproximation": "คล้ายเสียง 'อะ' กึ่ง 'อา' สั้นและกระชับ",
+      "lipOpening": "medium",
+      "tonguePosition": "low-flat"
+    },
+    "exampleWord": {
+      "word": "朝",
+      "reading": "あさ (asa)",
+      "meaning": "ตอนเช้า"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/a.png"
+  },
+  {
+    "char": "い",
+    "romaji": "i",
+    "thai": "อิ/อี",
+    "category": "vowel",
+    "mouthGuide": {
+      "shapeName": "ยิ้มกว้าง มุมปากดึงออกด้านข้าง",
+      "instruction": "ดึงมุมปากทั้งสองข้างออกด้านข้างคล้ายกำลังยิ้ม ฟันบนและฟันล่างชิดกันเกือบแตะ ลิ้นยกสูงขึ้นใกล้เพดานปาก",
+      "thaiApproximation": "คล้ายสระ 'อิ' ในภาษาไทย แต่ออกเสียงชัดเจนและกระชับ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "high-front"
+    },
+    "exampleWord": {
+      "word": "犬",
+      "reading": "いぬ (inu)",
+      "meaning": "สุนัข"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/i.png"
+  },
+  {
+    "char": "う",
+    "romaji": "u",
+    "thai": "อุ/อึ",
+    "category": "vowel",
+    "mouthGuide": {
+      "shapeName": "ปากไม่ห่อกลม ทำปากแบนผ่อนคลาย (จุดสำคัญคนไทย!)",
+      "instruction": "คนไทยมักห่อปากกลมแบบสระ 'อู' ซึ่งไม่ถูกต้อง! ในภาษาญี่ปุ่นริมฝีปากจะต้องไม่ยื่นออกมา ไม่ห่อกลม ให้ทำปากคล้ายสระ 'อึ' แต่ปล่อยเสียง 'อุ' ออกมาเบาๆ",
+      "thaiApproximation": "เสียงกึ่งกลางระหว่าง 'อุ' และ 'อึ'",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "high-back-unrounded"
+    },
+    "exampleWord": {
+      "word": "海",
+      "reading": "うみ (umi)",
+      "meaning": "ทะเล"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/u.png"
+  },
+  {
+    "char": "え",
+    "romaji": "e",
+    "thai": "เอะ/เอ",
+    "category": "vowel",
+    "mouthGuide": {
+      "shapeName": "เปิดปากระดับกลาง ยิ้มเล็กน้อย",
+      "instruction": "เปิดปากกว้างกว่าสระ 'อิ' เล็กน้อย ยกมุมปากขึ้นเล็กน้อย ลิ้นอยู่ระดับกลางช่องปาก",
+      "thaiApproximation": "คล้ายสระ 'เอะ' ในภาษาไทยแต่เปล่งเสียงชัด",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "mid-front"
+    },
+    "exampleWord": {
+      "word": "駅",
+      "reading": "えき (eki)",
+      "meaning": "สถานีรถไฟ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/e.png"
+  },
+  {
+    "char": "お",
+    "romaji": "o",
+    "thai": "โอะ/โอ",
+    "category": "vowel",
+    "mouthGuide": {
+      "shapeName": "ห่อปากกลมเล็กน้อย ลิ้นลดต่ำ",
+      "instruction": "ห่อริมฝีปากเป็นวงกลมเล็กน้อย (ไม่ยื่นปากมากเกินไป) โคนลิ้นลดต่ำลงเล็กน้อย",
+      "thaiApproximation": "คล้ายสระ 'โอะ' สั้นกระชับ",
+      "lipOpening": "round-small",
+      "tonguePosition": "mid-back"
+    },
+    "exampleWord": {
+      "word": "お茶",
+      "reading": "おちゃ (ocha)",
+      "meaning": "ชาเขียว"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/o.png"
+  },
+  {
+    "char": "か",
+    "romaji": "ka",
+    "thai": "คะ/คา",
+    "category": "k",
+    "mouthGuide": {
+      "shapeName": "โคนลิ้นแตะเพดานอ่อนแล้วปล่อยลม",
+      "instruction": "ยกโคนลิ้นขึ้นแตะเพดานอ่อนด้านในเพื่อกักลม แล้วปล่อยเสียง 'ค' หรือ 'ก' ออกมาพร้อมสระ 'อา' อย่างเป็นธรรมชาติ",
+      "thaiApproximation": "ออกเสียงก้ำกึ่งระหว่าง 'คะ' กับ 'กะ'",
+      "lipOpening": "medium",
+      "tonguePosition": "velar-release"
+    },
+    "exampleWord": {
+      "word": "傘",
+      "reading": "かさ (kasa)",
+      "meaning": "ร่ม"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ka.png"
+  },
+  {
+    "char": "き",
+    "romaji": "ki",
+    "thai": "คิ/กิ",
+    "category": "k",
+    "mouthGuide": {
+      "shapeName": "ฉีกยิ้ม ออกเสียง คิ",
+      "instruction": "ดึงมุมปากออกด้านข้างแบบสระ อิ และปล่อยลมจากโคนลิ้น",
+      "thaiApproximation": "คิ / กิ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "palatal-release"
+    },
+    "exampleWord": {
+      "word": "木",
+      "reading": "き (ki)",
+      "meaning": "ต้นไม้"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ki.png"
+  },
+  {
+    "char": "く",
+    "romaji": "ku",
+    "thai": "คุ/กุ",
+    "category": "k",
+    "mouthGuide": {
+      "shapeName": "ปากไม่ห่อกลม ออกเสียง คุ กึ่ง กุ",
+      "instruction": "ทำรูปปากแบบสระ 'う' (ปากแบนไม่ยื่น) แล้วออกเสียง คุ",
+      "thaiApproximation": "คุ กึ่ง กุ",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "velar-release"
+    },
+    "exampleWord": {
+      "word": "車",
+      "reading": "くるま (kuruma)",
+      "meaning": "รถยนต์"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ku.png"
+  },
+  {
+    "char": "け",
+    "romaji": "ke",
+    "thai": "เคะ/เกะ",
+    "category": "k",
+    "mouthGuide": {
+      "shapeName": "เปิดปากกลาง ออกเสียง เคะ",
+      "instruction": "รูปปากสระ 'え' ผสมพยัญชนะ k",
+      "thaiApproximation": "เคะ / เกะ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "velar-release"
+    },
+    "exampleWord": {
+      "word": "毛",
+      "reading": "け (ke)",
+      "meaning": "ขน/ผม"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ke.png"
+  },
+  {
+    "char": "こ",
+    "romaji": "ko",
+    "thai": "โคะ/โกะ",
+    "category": "k",
+    "mouthGuide": {
+      "shapeName": "ห่อปากกลมเล็กน้อย ออกเสียง โคะ",
+      "instruction": "รูปปากสระ 'お' ผสมพยัญชนะ k",
+      "thaiApproximation": "โคะ / โกะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "velar-release"
+    },
+    "exampleWord": {
+      "word": "声",
+      "reading": "こえ (koe)",
+      "meaning": "เสียง"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ko.png"
+  },
+  {
+    "char": "さ",
+    "romaji": "sa",
+    "thai": "สะ/ซะ",
+    "category": "s",
+    "mouthGuide": {
+      "shapeName": "ปลายลิ้นใกล้หลังฟันบน พ่นลมเบาๆ",
+      "instruction": "ปลายลิ้นยกใกล้ปุ่มเหงือกด้านหลังฟันบน ปล่อยลมเสียดแทรกออกมาเป็นเสียง s",
+      "thaiApproximation": "สะ / ซะ",
+      "lipOpening": "medium",
+      "tonguePosition": "alveolar-fricative"
+    },
+    "exampleWord": {
+      "word": "魚",
+      "reading": "さかな (sakana)",
+      "meaning": "ปลา"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/sa.png"
+  },
+  {
+    "char": "し",
+    "romaji": "shi",
+    "thai": "ชิ/ชิสึ",
+    "category": "s",
+    "mouthGuide": {
+      "shapeName": "ฟันชิด ลิ้นยกใกล้เพดานแข็ง พ่นลมเสียดแทรก (ไม่ใช่ ซิ!)",
+      "instruction": "ไม่ใช่เสียง s แบบไทย แต่เป็นเสียง sh นุ่มนวล คล้ายเสียง 'ชู่... สั่งให้เงียบ' โดยลิ้นกว้างขึ้น",
+      "thaiApproximation": "ชิ (นุ่มนวล)",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "palato-alveolar"
+    },
+    "exampleWord": {
+      "word": "白",
+      "reading": "しろ (shiro)",
+      "meaning": "สีขาว"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/shi.png"
+  },
+  {
+    "char": "す",
+    "romaji": "su",
+    "thai": "ซุ/สึ",
+    "category": "s",
+    "mouthGuide": {
+      "shapeName": "ปากแบน พ่นลม s ผสมสระ อุ/อึ",
+      "instruction": "ฟันบนและล่างเกือบแตะกัน ลิ้นชิดหลังฟันหน้า พ่นลมเสียง ส แล้วปิดด้วยสระแบน",
+      "thaiApproximation": "ซุ กึ่ง ซึ",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "alveolar-fricative"
+    },
+    "exampleWord": {
+      "word": "寿司",
+      "reading": "すし (sushi)",
+      "meaning": "ซูชิ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/su.png"
+  },
+  {
+    "char": "せ",
+    "romaji": "se",
+    "thai": "เซะ",
+    "category": "s",
+    "mouthGuide": {
+      "shapeName": "ยิ้มเล็กน้อย พ่นลมเสียง s ตามด้วย เอะ",
+      "instruction": "รูปปากสระ 'え' พ่นลมเสียดแทรก",
+      "thaiApproximation": "เซะ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "alveolar-fricative"
+    },
+    "exampleWord": {
+      "word": "世界",
+      "reading": "せかい (sekai)",
+      "meaning": "โลก"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/se.png"
+  },
+  {
+    "char": "そ",
+    "romaji": "so",
+    "thai": "โสะ/โซะ",
+    "category": "s",
+    "mouthGuide": {
+      "shapeName": "ห่อปากเล็กน้อย พ่นลม s ตามด้วย โอะ",
+      "instruction": "รูปปากสระ 'お' พ่นลม s",
+      "thaiApproximation": "โสะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "alveolar-fricative"
+    },
+    "exampleWord": {
+      "word": "空",
+      "reading": "そら (sora)",
+      "meaning": "ท้องฟ้า"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/so.png"
+  },
+  {
+    "char": "た",
+    "romaji": "ta",
+    "thai": "ทะ/ตะ",
+    "category": "t",
+    "mouthGuide": {
+      "shapeName": "ปลายลิ้นแตะหลังฟันบนแล้วดีดออก",
+      "instruction": "ปลายลิ้นแตะปุ่มเหงือก กักลมไว้ชั่วขณะแล้วดีดออกเป็นเสียง ท/ต",
+      "thaiApproximation": "ทะ / ตะ",
+      "lipOpening": "medium",
+      "tonguePosition": "alveolar-stop"
+    },
+    "exampleWord": {
+      "word": "卵",
+      "reading": "たまご (tamago)",
+      "meaning": "ไข่"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ta.png"
+  },
+  {
+    "char": "ち",
+    "romaji": "chi",
+    "thai": "ชิ/จิ",
+    "category": "t",
+    "mouthGuide": {
+      "shapeName": "ลิ้นแตะเพดานแข็งแล้วปล่อยลมชู่ (คล้าย ช/จ)",
+      "instruction": "เสียงกึ่งเสียดแทรก ลิ้นแตะเพดานแล้วคลายออกเล็กน้อยเป็นเสียง ch",
+      "thaiApproximation": "ชิ / จิ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "alveolo-palatal"
+    },
+    "exampleWord": {
+      "word": "地図",
+      "reading": "ちず (chizu)",
+      "meaning": "แผนที่"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/chi.png"
+  },
+  {
+    "char": "つ",
+    "romaji": "tsu",
+    "thai": "สึ/ทสึ",
+    "category": "t",
+    "mouthGuide": {
+      "shapeName": "แตะลิ้นหลังฟันบน พ่นลมคล้ายเสียง จิ๊กจิ๊ก (จุดยากสำหรับคนไทย!)",
+      "instruction": "เริ่มต้นด้วยตำแหน่งเสียง 'ต/ท' แล้วคลายออกเป็นเสียง 'ซ/ส' อย่างรวดเร็ว คล้ายเสียงเวลาสั่งเงียบ 'ชึบ' หรือเวลาเรียกน้องหมา 'จิ๊กๆ'",
+      "thaiApproximation": "ทสึ (ไม่ห่อปาก)",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "alveolar-affricate"
+    },
+    "exampleWord": {
+      "word": "机",
+      "reading": "つくえ (tsukue)",
+      "meaning": "โต๊ะ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/tsu.png"
+  },
+  {
+    "char": "て",
+    "romaji": "te",
+    "thai": "เทะ/เตะ",
+    "category": "t",
+    "mouthGuide": {
+      "shapeName": "แตะลิ้นแล้วดีดออกผสมสระ เอะ",
+      "instruction": "ตำแหน่งลิ้นแตะปุ่มเหงือกแล้วเปิดออกเป็นสระ 'え'",
+      "thaiApproximation": "เทะ / เตะ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "alveolar-stop"
+    },
+    "exampleWord": {
+      "word": "手",
+      "reading": "て (te)",
+      "meaning": "มือ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/te.png"
+  },
+  {
+    "char": "と",
+    "romaji": "to",
+    "thai": "โทะ/โตะ",
+    "category": "t",
+    "mouthGuide": {
+      "shapeName": "แตะลิ้นแล้วดีดออกผสมสระ โอะ",
+      "instruction": "ตำแหน่งลิ้นแตะปุ่มเหงือก ห่อปากกลมเล็กน้อย",
+      "thaiApproximation": "โทะ / โตะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "alveolar-stop"
+    },
+    "exampleWord": {
+      "word": "友達",
+      "reading": "ともだち (tomodachi)",
+      "meaning": "เพื่อน"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/to.png"
+  },
+  {
+    "char": "な",
+    "romaji": "na",
+    "thai": "นะ",
+    "category": "n",
+    "mouthGuide": {
+      "shapeName": "ลิ้นแตะเพดานบน เสียงขึ้นจมูก",
+      "instruction": "ปลายลิ้นแตะปุ่มเหงือก ปล่อยเสียงกังวานออกทางจมูก",
+      "thaiApproximation": "นะ",
+      "lipOpening": "medium",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "夏",
+      "reading": "なつ (natsu)",
+      "meaning": "ฤดูร้อน"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/na.png"
+  },
+  {
+    "char": "に",
+    "romaji": "ni",
+    "thai": "นิ",
+    "category": "n",
+    "mouthGuide": {
+      "shapeName": "ยิ้มกว้าง เสียงขึ้นจมูก",
+      "instruction": "ลิ้นแตะเพดานแข็ง ฉีกยิ้มออกเสียง นิ",
+      "thaiApproximation": "นิ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "肉",
+      "reading": "にく (niku)",
+      "meaning": "เนื้อ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ni.png"
+  },
+  {
+    "char": "ぬ",
+    "romaji": "nu",
+    "thai": "นุ",
+    "category": "n",
+    "mouthGuide": {
+      "shapeName": "ปากแบนไม่ห่อกลม เสียง น ผสม อุ",
+      "instruction": "เสียงขึ้นจมูกและปิดด้วยสระ 'う' แบน",
+      "thaiApproximation": "นุ กึ่ง นึ",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "ぬいぐるみ",
+      "reading": "nuigurumi",
+      "meaning": "ตุ๊กตายัดนุ่น"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/nu.png"
+  },
+  {
+    "char": "ね",
+    "romaji": "ne",
+    "thai": "เนะ",
+    "category": "n",
+    "mouthGuide": {
+      "shapeName": "เปิดปากกลาง เสียง น ผสม เอะ",
+      "instruction": "เสียงขึ้นจมูกตามด้วยสระ 'え'",
+      "thaiApproximation": "เนะ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "猫",
+      "reading": "ねこ (neko)",
+      "meaning": "แมว"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ne.png"
+  },
+  {
+    "char": "の",
+    "romaji": "no",
+    "thai": "โนะ",
+    "category": "n",
+    "mouthGuide": {
+      "shapeName": "ห่อปากเล็กน้อย เสียง น ผสม โอะ",
+      "instruction": "เสียงขึ้นจมูกตามด้วยสระ 'お'",
+      "thaiApproximation": "โนะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "飲み物",
+      "reading": "のみもの (nomimono)",
+      "meaning": "เครื่องดื่ม"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/no.png"
+  },
+  {
+    "char": "は",
+    "romaji": "ha",
+    "thai": "ฮะ/หะ",
+    "category": "h",
+    "mouthGuide": {
+      "shapeName": "เปิดคอ ผ่อนลมหายใจออกทางปาก",
+      "instruction": "ลมพ่นออกมาจากช่องคอโดยไม่ติดขัด ผสมสระ อา",
+      "thaiApproximation": "ฮะ / หะ",
+      "lipOpening": "medium",
+      "tonguePosition": "glottal"
+    },
+    "exampleWord": {
+      "word": "花",
+      "reading": "はな (hana)",
+      "meaning": "ดอกไม้"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ha.png"
+  },
+  {
+    "char": "ひ",
+    "romaji": "hi",
+    "thai": "ฮิ",
+    "category": "h",
+    "mouthGuide": {
+      "shapeName": "ลิ้นยกใกล้เพดานแข็ง พ่นลมเสียดสี",
+      "instruction": "ลิ้นยกสูงใกล้เพดานแข็ง พ่นลมเสียง ฮิ ให้มีลมเสียดแทรกเล็กน้อย",
+      "thaiApproximation": "ฮิ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "palatal-fricative"
+    },
+    "exampleWord": {
+      "word": "光",
+      "reading": "ひかり (hikari)",
+      "meaning": "แสงสว่าง"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/hi.png"
+  },
+  {
+    "char": "ふ",
+    "romaji": "fu",
+    "thai": "ฟุ/ฮุ",
+    "category": "h",
+    "mouthGuide": {
+      "shapeName": "เป่าลมผ่านริมฝีปากบนและล่าง (ไม่ใช่ ฟันแตะริมฝีปากแบบ F ในอังกฤษ!)",
+      "instruction": "จุดสำคัญมาก! ไม่ใช่ตัว 'ฟ' ที่ฟันบนกัดริมฝีปากล่าง แต่ให้ทำปากเหมือนกำลังเป่าเทียนวันเกิดให้ดับ ลมพ่นผ่านช่องว่างระหว่างริมฝีปากบน-ล่าง",
+      "thaiApproximation": "ฟุ กึ่ง ฮุ (เป่าลมเบาๆ)",
+      "lipOpening": "bilabial-blow",
+      "tonguePosition": "bilabial-fricative"
+    },
+    "exampleWord": {
+      "word": "富士山",
+      "reading": "ふじさん (fujisan)",
+      "meaning": "ภูเขาไฟฟูจิ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/fu.png"
+  },
+  {
+    "char": "へ",
+    "romaji": "he",
+    "thai": "เฮะ",
+    "category": "h",
+    "mouthGuide": {
+      "shapeName": "พ่นลมทางคอ ผสมสระ เอะ",
+      "instruction": "เปิดปากกลาง พ่นลมเสียง ฮ",
+      "thaiApproximation": "เฮะ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "glottal"
+    },
+    "exampleWord": {
+      "word": "部屋",
+      "reading": "へや (heya)",
+      "meaning": "ห้อง"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/he.png"
+  },
+  {
+    "char": "ほ",
+    "romaji": "ho",
+    "thai": "โฮะ",
+    "category": "h",
+    "mouthGuide": {
+      "shapeName": "ห่อปากเล็กน้อย พ่นลมเสียง โฮะ",
+      "instruction": "รูปปากสระ 'お' พ่นลม ฮ",
+      "thaiApproximation": "โฮะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "glottal"
+    },
+    "exampleWord": {
+      "word": "星",
+      "reading": "ほし (hoshi)",
+      "meaning": "ดวงดาว"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ho.png"
+  },
+  {
+    "char": "ま",
+    "romaji": "ma",
+    "thai": "มะ",
+    "category": "m",
+    "mouthGuide": {
+      "shapeName": "ริมฝีปากปิดสนิทแล้วเปิดออก",
+      "instruction": "ริมฝีปากบนและล่างปิดสนิท กักลมแล้วเปิดออกพร้อมเสียง มะ",
+      "thaiApproximation": "มะ",
+      "lipOpening": "bilabial-open",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "町",
+      "reading": "まち (machi)",
+      "meaning": "เมือง"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ma.png"
+  },
+  {
+    "char": "み",
+    "romaji": "mi",
+    "thai": "มิ",
+    "category": "m",
+    "mouthGuide": {
+      "shapeName": "ปิดปากแล้วยิ้มออกเสียง มิ",
+      "instruction": "ปิดริมฝีปากแล้วฉีกยิ้มออกเสียง มิ",
+      "thaiApproximation": "มิ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "水",
+      "reading": "みず (mizu)",
+      "meaning": "น้ำดื่ม"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/mi.png"
+  },
+  {
+    "char": "む",
+    "romaji": "mu",
+    "thai": "มุ",
+    "category": "m",
+    "mouthGuide": {
+      "shapeName": "ปิดปากแล้วปล่อยเสียง มุ ไม่ห่อปาก",
+      "instruction": "ปิดริมฝีปาก คลายออกสู่สระ 'う' ปากแบน",
+      "thaiApproximation": "มุ กึ่ง มึ",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "虫",
+      "reading": "むし (mushi)",
+      "meaning": "แมลง"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/mu.png"
+  },
+  {
+    "char": "め",
+    "romaji": "me",
+    "thai": "เมะ",
+    "category": "m",
+    "mouthGuide": {
+      "shapeName": "ปิดปากแล้วเปิดสู่สระ เอะ",
+      "instruction": "ปิดริมฝีปากแล้วเปิดออกเป็น เมะ",
+      "thaiApproximation": "เมะ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "目",
+      "reading": "め (me)",
+      "meaning": "ตา"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/me.png"
+  },
+  {
+    "char": "も",
+    "romaji": "mo",
+    "thai": "โมะ",
+    "category": "m",
+    "mouthGuide": {
+      "shapeName": "ปิดปากแล้วเปิดห่อกลมเป็น โมะ",
+      "instruction": "ปิดริมฝีปากแล้วเปิดออกเป็นสระ 'お'",
+      "thaiApproximation": "โมะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "nasal"
+    },
+    "exampleWord": {
+      "word": "森",
+      "reading": "もり (mori)",
+      "meaning": "ป่า"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/mo.png"
+  },
+  {
+    "char": "や",
+    "romaji": "ya",
+    "thai": "ยะ",
+    "category": "y",
+    "mouthGuide": {
+      "shapeName": "เริ่มจากรูปปาก อิ แล้วเลื่อนสู่ อา อย่างเร็ว",
+      "instruction": "ลิ้นเริ่มจากตำแหน่งสระ 'い' แล้วเลื่อนลงสู่ 'あ' เป็นเสียง ยะ",
+      "thaiApproximation": "ยะ",
+      "lipOpening": "glide-open",
+      "tonguePosition": "glide"
+    },
+    "exampleWord": {
+      "word": "山",
+      "reading": "やま (yama)",
+      "meaning": "ภูเขา"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ya.png"
+  },
+  {
+    "char": "ゆ",
+    "romaji": "yu",
+    "thai": "ยุ",
+    "category": "y",
+    "mouthGuide": {
+      "shapeName": "เริ่มจาก อิ เลื่อนสู่ อุ (ปากไม่ห่อ)",
+      "instruction": "เลื่อนตำแหน่งลิ้นจาก 'い' ไป 'う'",
+      "thaiApproximation": "ยุ กึ่ง ยึ",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "glide"
+    },
+    "exampleWord": {
+      "word": "雪",
+      "reading": "ゆき (yuki)",
+      "meaning": "หิมะ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/yu.png"
+  },
+  {
+    "char": "よ",
+    "romaji": "yo",
+    "thai": "โยะ",
+    "category": "y",
+    "mouthGuide": {
+      "shapeName": "เริ่มจาก อิ เลื่อนสู่ โอะ",
+      "instruction": "เลื่อนตำแหน่งลิ้นจาก 'い' ไป 'お'",
+      "thaiApproximation": "โยะ",
+      "lipOpening": "round-small",
+      "tonguePosition": "glide"
+    },
+    "exampleWord": {
+      "word": "夜",
+      "reading": "よる (yoru)",
+      "meaning": "กลางคืน"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/yo.png"
+  },
+  {
+    "char": "ら",
+    "romaji": "ra",
+    "thai": "ระ/ละ",
+    "category": "r",
+    "mouthGuide": {
+      "shapeName": "ปลายลิ้นแตะหลังฟันบนสะบัดเบาๆ 1 ครั้ง (ไม่ใช่ รัวลิ้น ร หรือ ล แบบไทย!)",
+      "instruction": "จุดสำคัญมาก! เสียง R ในภาษาญี่ปุ่นอยู่กึ่งกลางระหว่าง ร และ ล ให้ยกปลายลิ้นขึ้นแตะปุ่มเหงือกด้านหลังฟันบนเพียงเสี้ยววินาทีแล้วดีดลงมา คล้ายเสียง d หรือ t เบาๆ ไม่มีการรัวลิ้น",
+      "thaiApproximation": "ระ กึ่ง ละ (แตะสะบัด 1 ครั้ง)",
+      "lipOpening": "medium",
+      "tonguePosition": "alveolar-flap"
+    },
+    "exampleWord": {
+      "word": "桜",
+      "reading": "さくら (sakura)",
+      "meaning": "ดอกซากุระ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ra.png"
+  },
+  {
+    "char": "り",
+    "romaji": "ri",
+    "thai": "ริ/ลิ",
+    "category": "r",
+    "mouthGuide": {
+      "shapeName": "สะบัดลิ้น 1 ครั้ง ผสมสระ อิ",
+      "instruction": "แตะปลายลิ้นสะบัดเบาๆ ขณะฉีกยิ้ม",
+      "thaiApproximation": "ริ กึ่ง ลิ",
+      "lipOpening": "wide-slit",
+      "tonguePosition": "alveolar-flap"
+    },
+    "exampleWord": {
+      "word": "りんご",
+      "reading": "ringo",
+      "meaning": "แอปเปิ้ล"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ri.png"
+  },
+  {
+    "char": "る",
+    "romaji": "ru",
+    "thai": "รุ/ลุ",
+    "category": "r",
+    "mouthGuide": {
+      "shapeName": "สะบัดลิ้น 1 ครั้ง ผสมสระ อุ (ปากแบน)",
+      "instruction": "แตะสะบัดปลายลิ้น 1 ครั้ง โดยปากไม่ห่อกลม",
+      "thaiApproximation": "รุ กึ่ง ลุ",
+      "lipOpening": "relaxed-neutral",
+      "tonguePosition": "alveolar-flap"
+    },
+    "exampleWord": {
+      "word": "春",
+      "reading": "はる (haru)",
+      "meaning": "ฤดูใบไม้ผลิ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ru.png"
+  },
+  {
+    "char": "れ",
+    "romaji": "re",
+    "thai": "เระ/เละ",
+    "category": "r",
+    "mouthGuide": {
+      "shapeName": "สะบัดลิ้น 1 ครั้ง ผสมสระ เอะ",
+      "instruction": "แตะสะบัดปลายลิ้น 1 ครั้งแล้วเปิดสู่สระ เอะ",
+      "thaiApproximation": "เระ กึ่ง เละ",
+      "lipOpening": "medium-wide",
+      "tonguePosition": "alveolar-flap"
+    },
+    "exampleWord": {
+      "word": "歴史",
+      "reading": "れきし (rekishi)",
+      "meaning": "ประวัติศาสตร์"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/re.png"
+  },
+  {
+    "char": "ろ",
+    "romaji": "ro",
+    "thai": "โระ/โละ",
+    "category": "r",
+    "mouthGuide": {
+      "shapeName": "สะบัดลิ้น 1 ครั้ง ผสมสระ โอะ",
+      "instruction": "แตะสะบัดปลายลิ้น 1 ครั้ง ปากห่อเล็กน้อย",
+      "thaiApproximation": "โระ กึ่ง โละ",
+      "lipOpening": "round-small",
+      "tonguePosition": "alveolar-flap"
+    },
+    "exampleWord": {
+      "word": "ろうそく",
+      "reading": "rousoku",
+      "meaning": "เทียน"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/ro.png"
+  },
+  {
+    "char": "わ",
+    "romaji": "wa",
+    "thai": "วะ",
+    "category": "w",
+    "mouthGuide": {
+      "shapeName": "ห่อปากเล็กน้อยแล้วเปิดออกเป็น วะ",
+      "instruction": "ริมฝีปากห่อเข้าหากันเล็กน้อยแล้วเปิดออกสู่สระ 'あ'",
+      "thaiApproximation": "วะ",
+      "lipOpening": "glide-open",
+      "tonguePosition": "labio-velar"
+    },
+    "exampleWord": {
+      "word": "私",
+      "reading": "わたし (watashi)",
+      "meaning": "ฉัน"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/wa.png"
+  },
+  {
+    "char": "を",
+    "romaji": "wo/o",
+    "thai": "โอะ (คำช่วย)",
+    "category": "w",
+    "mouthGuide": {
+      "shapeName": "ออกเสียงเหมือน お ใช้เป็นคำช่วยชี้กรรม",
+      "instruction": "ปัจจุบันออกเสียงเดียวกับ 'お' ไม่ต้องออกเสียง w ใช้ทำหน้าที่เป็นคำช่วยทางไวยากรณ์เท่านั้น",
+      "thaiApproximation": "โอะ (ชี้กรรม)",
+      "lipOpening": "round-small",
+      "tonguePosition": "mid-back"
+    },
+    "exampleWord": {
+      "word": "本を読む",
+      "reading": "ほんをよむ (hon o yomu)",
+      "meaning": "อ่านหนังสือ"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/wo.png"
+  },
+  {
+    "char": "ん",
+    "romaji": "n",
+    "thai": "อึง/อึน/อึม",
+    "category": "n_solo",
+    "mouthGuide": {
+      "shapeName": "พยัญชนะตัวสะกดเดี่ยว เสียงออกทางจมูก (เปลี่ยนตามเสียงตัวถัดไป)",
+      "instruction": "ตัวสะกดเพียงตัวเดียวในภาษาญี่ปุ่น ออกเสียงก้องในจมูก ถ้าอยู่ท้ายคำจะออกเสียง ง/น ถ้าอยู่หน้าเสียง p/b/m จะเปลี่ยนเป็น ม เช่น ในคำว่า senpai (sem-pai)",
+      "thaiApproximation": "ง / น / ม (เสียงขึ้นจมูก 1 จังหวะเต็ม)",
+      "lipOpening": "closed-nasal",
+      "tonguePosition": "nasal-mora"
+    },
+    "exampleWord": {
+      "word": "日本",
+      "reading": "にほん (nihon)",
+      "meaning": "ประเทศญี่ปุ่น"
+    },
+    "strokeImage": "assets/images/strokes/hiragana/n.png"
+  }
+]
